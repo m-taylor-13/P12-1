@@ -13,7 +13,7 @@ int main() {
 
     string datafile;
     string word;
-
+    //
     int numWord = 0;
     int numChars = 0;
 
