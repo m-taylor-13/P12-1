@@ -29,7 +29,7 @@ int main() {
         char c;
 
         while (file.get(c)) {
-            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+           if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c=='-' || c == '\'' || (c == '!') || (c == '.') || c == ';' || (c == ',') || c == '?' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6' || c == '7' || c == '8' || c == '9' || c == '0') {
                 numChars++;
             }
         }
@@ -39,15 +39,16 @@ int main() {
 
         while (file >> word) {
             string cleanWord;
-            for (char ch : word) {
-                if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-                    cleanWord += ch;
-                }
-            }
+            //for (char ch : word) {
+               // if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+                    //cleanWord += ch;
+                //}
+            //}
 
-            if (!cleanWord.empty()) {
+            //if (!cleanWord.empty()) {
+                //numWord++;
+            //}
                 numWord++;
-            }
         }
 
         file.close();
